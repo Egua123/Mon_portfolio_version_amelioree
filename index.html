@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Mon portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/ad121f0985.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="les_css/accueil.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav id="navbar" aria-label="Navigation principale">
+    <h2 class="logo">moh<span id="leI">i</span>can</h2>
+
+    <div class="navliens" id="navLinks">
+      <ul id="menu" role="menu">
+        <li role="none"><a role="menuitem" href="#accueil">ACCUEIL</a></li>
+        <li role="none"><a role="menuitem" href="#apropos">À PROPOS</a></li>
+        <li role="none"><a role="menuitem" href="#projets">PROJETS</a></li>
+        <li role="none"><a role="menuitem" href="#contact">CONTACT</a></li>
+        <li role="none"><a role="menuitem" href="#footer">PIED</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-actions">
+      <button id="themeToggle" class="btn-icon" aria-label="Basculer thème">
+        <i class="fa-solid fa-sun" aria-hidden="true"></i>
+      </button>
+      <button id="iconeFermeOuvert" class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+        <i class="fa-solid fa-bars derouler" aria-hidden="true"></i>
+        <i class="fa-solid fa-xmark fermer" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+
+  <div id="emballage">
+    <!-- ACCUEIL -->
+    <section id="accueil" class="accueil">
+      <div id="textIntro">
+        <h4 id="bienvenue">Bienvenue, je m'appelle <span id="monNom">Mario Sekpona</span></h4>
+        <h1 id="statut">Étudiant en informatique & passionné de Data/Web</h1>
+      </div>
+    </section>
+
+    <!-- À PROPOS (linéaire) -->
+    <section id="apropos" class="section-apropos">
+      <div id="presentation" class="blocks active">
+        <div id="textpresentation" class="textblocks">
+          <h1>Présentation</h1>
+          <div>
+            En 3ᵉ année de bac en informatique, je conçois des interfaces simples et efficaces
+            et j’adore automatiser les tâches.
+          </div>
+        </div>
+        <div class="imageblocks" id="imgPre" aria-hidden="true"></div>
+      </div>
+
+      <div id="langues" class="blocks">
+        <div id="textlangues" class="textblocks">
+          <h1>Langues</h1>
+          <ul>
+            <li><strong>Français :</strong> parlé & écrit.</li>
+            <li><strong>Anglais :</strong> intermédiaire (en progression).</li>
+            <li><strong>Espagnol :</strong> bases (conversation simple).</li>
+          </ul>
+        </div>
+        <div class="imageblocks" id="imgLang" aria-hidden="true"></div>
+      </div>
+
+      <div id="competencestechniques" class="blocks">
+        <div id="textcompetencestechniques" class="textblocks">
+          <h1>Compétences techniques</h1>
+          <div>
+            <strong>Dev :</strong> Java, C++, Angular, Spring Boot (SOLID, OO).<br>
+            <strong>Données :</strong> MySQL, PostgreSQL, Firestore.<br>
+            <strong>Algorithmes :</strong> OCaml, Prolog (programmation dynamique).<br>
+            <strong>Ingénierie :</strong> UML, architecture évolutive, projets collaboratifs.<br>
+            <strong>Outils :</strong> Power BI, Firebase ,DBeaver , VS Code,Jupyter Notebook, git & github
+          </div>
+        </div>
+        <div class="imageblocks" id="imgComptech" aria-hidden="true"></div>
+      </div>
+
+      <div id="competencesrelationnelles" class="blocks">
+        <div id="textcompetencesrelationnelles" class="textblocks">
+          <h1>Compétences relationnelles</h1>
+          <ul>
+            <li><strong>Leadership</strong> (coaching, gestion d’équipe)</li>
+            <li><strong>Communication</strong> (arbitrage, conflits)</li>
+            <li><strong>Esprit d’équipe</strong> (projets scolaires/sport)</li>
+            <li><strong>Décision rapide</strong> (pression/temps réel)</li>
+            <li><strong>Organisation</strong> (deadlines, priorités)</li>
+          </ul>
+        </div>
+        <div class="imageblocks" id="imgComprel" aria-hidden="true"></div>
+      </div>
+
+      <div id="passions" class="blocks">
+        <div id="textpassions" class="textblocks">
+          <h1>Loisirs</h1>
+          <h3>Sport</h3> Soccer, boxe régulière pour discipline & focus.
+          <h3>Cuisine</h3> Explorer les cultures par les saveurs.
+          <h3>Écriture</h3> Capturer des idées, clarifier la pensée.
+        </div>
+        <div class="imageblocks" id="imgPass" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- PROJETS (ordre + tags + modales) -->
+    <section id="projets">
+      <div class="blocProjet">
+        <!-- 1. Dashboard BIXI -->
+        <div class="brique" id="brique1">
+          <div class="titreprojet">Dashboard BIXI</div>
+          <div class="imageprojet" id="imageprojet1"></div>
+          <ul class="tags">
+            <li>DataViz</li><li>ETL</li><li>SQL</li><li>JS</li>
+          </ul>
+          <div class="boutonsprojet">
+            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/bixi-dashboard', '_blank');">
+              <span class="boutontextprojet">voir sur</span>
+              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+            </button>
+            <button class="deuxboutons boutondetail" data-target="#descriptionprojet1">
+              <span class="boutontextprojet">description</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 2. Hotels Analytics -->
+        <div class="brique" id="brique2">
+          <div class="titreprojet">Hotels Analytics</div>
+          <div class="imageprojet" id="imageprojet2"></div>
+          <ul class="tags">
+            <li>Python</li><li>Pandas</li><li>Viz</li>
+          </ul>
+          <div class="boutonsprojet">
+            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/hotels-analytics', '_blank');">
+              <span class="boutontextprojet">voir sur</span>
+              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+            </button>
+            <button class="deuxboutons boutondetail" data-target="#descriptionprojet2">
+              <span class="boutontextprojet">description</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 3. CBIR -->
+        <div class="brique" id="brique3">
+          <div class="titreprojet">CBIR — recherche d’images par contenu</div>
+          <div class="imageprojet" id="imageprojet3"></div>
+          <ul class="tags">
+            <li>Vision</li><li>Features</li><li>Index</li>
+          </ul>
+          <div class="boutonsprojet">
+            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/cbir', '_blank');">
+              <span class="boutontextprojet">voir sur</span>
+              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+            </button>
+            <button class="deuxboutons boutondetail" data-target="#descriptionprojet3">
+              <span class="boutontextprojet">description</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 4. App messagerie -->
+        <div class="brique" id="brique4">
+          <div class="titreprojet">application monopage de messagerie simple</div>
+          <div class="imageprojet" id="imageprojet4"></div>
+          <ul class="tags">
+            <li>Angular</li><li>Spring Boot</li><li>Firebase</li>
+          </ul>
+          <div class="boutonsprojet">
+            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/chat-app-inf5190.git', '_blank');">
+              <span class="boutontextprojet">voir sur</span>
+              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+            </button>
+            <button class="deuxboutons boutondetail" data-target="#descriptionprojet4">
+              <span class="boutontextprojet">description</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 5. Logement en ligne -->
+        <div class="brique" id="brique5">
+          <div class="titreprojet">Logement en ligne</div>
+          <div class="imageprojet" id="imageprojet5"></div>
+          <ul class="tags">
+            <li>Java</li><li>UML</li><li>Design</li>
+          </ul>
+          <div class="boutonsprojet">
+            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/inf5153-groupe9.git', '_blank');">
+              <span class="boutontextprojet">voir sur</span>
+              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+            </button>
+            <button class="deuxboutons boutondetail" data-target="#descriptionprojet5">
+              <span class="boutontextprojet">description</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 6. Voir plus (dernier) -->
+        <a class="brique brique-plus" id="brique6" href="https://github.com/Egua123" target="_blank" rel="noreferrer">
+          <div class="imageprojet imageprojet--cover" id="imageprojet6"></div>
+          <div class="brique-plus__overlay">
+            <div class="plus-icon" aria-hidden="true">+</div>
+            <div class="plus-text">Voir plus sur GitHub</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Modales description (centrées & grandes) -->
+      <div class="descriptionprojet" id="descriptionprojet1" aria-modal="true" role="dialog">
+        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Dashboard BIXI</h3>
+        <p>Ingestion → transformation → visualisation. KPIs, filtres, timeline.</p>
+      </div>
+
+      <div class="descriptionprojet" id="descriptionprojet2" aria-modal="true" role="dialog">
+        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Hotels Analytics</h3>
+        <p>Analyse taux d’occupation, saisonnalité, revenue per room, etc.</p>
+      </div>
+
+      <div class="descriptionprojet" id="descriptionprojet3" aria-modal="true" role="dialog">
+        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+        <h3>CBIR — recherche d’images par contenu</h3>
+        <p>Extraction de descripteurs, indexation, métriques de similarité.</p>
+      </div>
+
+      <div class="descriptionprojet" id="descriptionprojet4" aria-modal="true" role="dialog">
+        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Application de messagerie</h3>
+        <p>Angular + Spring Boot + Firebase + GCP, déploiement & monitoring.</p>
+      </div>
+
+      <div class="descriptionprojet" id="descriptionprojet5" aria-modal="true" role="dialog">
+        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+        <h3>Logement en ligne</h3>
+        <p>Gestion logements/baux/rendez-vous/alertes. Java, UML, patrons de conception.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT (couleurs lisibles en jour/nuit) -->
+    <section id="contact" class="section-contact">
+      <div class="contact-card">
+        <h2>Me contacter</h2>
+        <form id="contactForm" class="form" novalidate>
+          <div class="form__row">
+            <label for="name">Nom</label>
+            <input id="name" name="name" type="text" placeholder="Votre nom" required />
+            <small class="error" data-for="name"></small>
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="vous@exemple.com" required />
+            <small class="error" data-for="email"></small>
+          </div>
+          <div class="form__row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+            <small class="error" data-for="message"></small>
+          </div>
+          <button class="btn-submit deuxboutons" type="submit">
+            <i class="fa-regular fa-paper-plane"></i> Envoyer
+          </button>
+          <p class="form__success" id="formSuccess" role="status" aria-live="polite" hidden>
+            Merci ! Votre message est prêt dans votre client mail.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="lesicones_enbas">
+        <div class="icon_pied">
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <p class="descriptionIconFooter">LinkedIn</p>
+        </div>
+        <div class="icon_pied">
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <p class="descriptionIconFooter">GitHub</p>
+        </div>
+        <div class="icon_pied">
+          <a href="#" aria-label="Télécharger mon CV"><i class="fa-solid fa-download"></i></a>
+          <p class="descriptionIconFooter">Télécharger mon CV</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JS intégré -->
+  <script>
+  // THEME
+  (function() {
+    const root = document.documentElement;
+    const btn = document.getElementById('themeToggle');
+    function apply(theme){ root.setAttribute('data-theme', theme); btn.innerHTML = theme==='dark' ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>'; }
+    const saved = localStorage.getItem('theme') || 'dark';
+    apply(saved);
+    btn.addEventListener('click', ()=> { const next = root.getAttribute('data-theme')==='dark'?'light':'dark'; apply(next); localStorage.setItem('theme', next); });
+  })();
+
+  // MENU BURGER
+  (function () {
+    const toggle = document.getElementById('iconeFermeOuvert');
+    const links = document.getElementById('navLinks');
+    function setExpanded(expanded){ toggle.setAttribute('aria-expanded', String(expanded)); document.body.classList.toggle('nav-open', expanded); }
+    const init = () => { if (window.innerWidth >= 900) setExpanded(false); };
+    window.addEventListener('load', init); window.addEventListener('resize', init);
+    toggle.addEventListener('click', () => { const expanded = toggle.getAttribute('aria-expanded') === 'true'; setExpanded(!expanded); });
+    links.addEventListener('click', (e) => { const a = e.target.closest('a'); if (a && window.innerWidth < 900) setExpanded(false); });
+  })();
+
+  // MODALES DESCRIPTIONS (centrées & grandes)
+  (function () {
+    let openEl = null;
+    function open(targetSel){
+      const el = document.querySelector(targetSel);
+      if(!el) return;
+      close();
+      el.classList.add('is-open');
+      openEl = el;
+      // focus la croix pour accessibilité
+      const closeBtn = el.querySelector('.close-modal');
+      if (closeBtn) closeBtn.focus();
+    }
+    function close(){
+      if(openEl){ openEl.classList.remove('is-open'); openEl = null; }
+    }
+    document.addEventListener('click', (e) => {
+      const btn = e.target.closest('.boutondetail');
+      if (btn) open(btn.getAttribute('data-target'));
+      const closer = e.target.closest('.close-modal');
+      if (closer) close();
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  })();
+
+  // CONTACT : validation & mailto
+  (function(){
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('formSuccess');
+    function errFor(name, msg){ const el = form.querySelector('[data-for="'+name+'"]'); if(el) el.textContent = msg || ''; }
+    form.addEventListener('submit', (e)=>{
+      e.preventDefault(); success.hidden = true;
+      ['name','email','message'].forEach(n=>errFor(n,''));
+      const data = new FormData(form);
+      const name = (data.get('name')||'').toString().trim();
+      const email = (data.get('email')||'').toString().trim();
+      const message = (data.get('message')||'').toString().trim();
+      let ok = true;
+      if(!name){ ok=false; errFor('name','Le nom est requis.'); }
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ ok=false; errFor('email','Email invalide.'); }
+      if(!message){ ok=false; errFor('message','Message requis.'); }
+      if(!ok) return;
+      const subject = encodeURIComponent('Contact portfolio — ' + name);
+      const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\n${message}`);
+      window.location.href = `mailto:mariosekpona@gmail.com?subject=${subject}&body=${body}`;
+      success.hidden = false; form.reset();
+    });
+  })();
+  </script>
+</body>
+</html>
