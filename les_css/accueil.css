@@ -3,7 +3,9 @@
    ========================= */
 :root
 {
+  --hero-image: url('../media/header-tech.jpg');
   /* sombre par défaut */
+  --hero-bg: #0f1320; 
   --bg: #0f1320;
   --bg-muted: #0b1020;
   --panel: rgba(15, 19, 32, 0.65);
@@ -29,6 +31,7 @@
 /* Thème clair */
 html[data-theme="light"]
 {
+  --hero-bg: #f3f6fb;
   --bg: #f5f7fb;
   --bg-muted: #eef2f9;
   --panel: rgba(255,255,255,0.75);
@@ -219,25 +222,137 @@ body.nav-open .nav-toggle .fermer
 /* =========================
    HERO
    ========================= */
-.accueil
-{
-  height: 80vh;
-  min-height: 520px;
-  background: linear-gradient(to bottom, rgba(7,9,13,.55), rgba(7,9,13,.25)),
-              url(../media/kayak.jpg) center/cover no-repeat;
+
+
+.accueil{
+  position: relative;
+  overflow: clip;
+  min-height: clamp(560px, 82vh, 900px);
+  display: grid;
+  place-items: center;
+  padding: clamp(1.25rem, 3.5vw, 3rem) 0;
+  background: var(--hero-bg);                   /* <- couleur thème visible sous l’image */
 }
+
+/* Couche image couvrante (semi-opaque) */
+.accueil::after{
+  content:"";
+  position: absolute;
+  inset: 0;
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: .8;                                 /* <- pas complètement opaque, la couleur thème reste perceptible */
+  filter: contrast(1.02) saturate(1.02);        /* petit boost propre (sans gradient) */
+  z-index: 0;
+}
+
+/* 4) Grille du contenu (texte à gauche) au-dessus de l’image */
+.hero{
+  position: relative;
+  z-index: 1;                                   /* passe au-dessus de l’image */
+  width: min(1200px, 92%);
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;          /* texte | (ex-figure ignorée) */
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+}
+
+/* On masque la figure si elle est encore dans le HTML */
+.hero__photo { display: none !important; }
+
+/* Texte lisible sur les deux thèmes */
+.hero__text{ max-width: 52ch; }
+.hero__text h4{ opacity:0; animation: fadeSlideX 700ms ease forwards; }
+.hero__text h1{
+  opacity:0; animation: fadeSlideY 700ms ease 120ms forwards;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+/* Responsive : on garde simple (une colonne en petit) */
+@media (max-width: 980px){
+  .hero{
+    grid-template-columns: 1fr;
+    gap: clamp(.75rem, 2.5vw, 1rem);
+  }
+  .hero__text{ max-width: 100%; }
+}
+
+/* === Boutons CTA Accueil === */
+.hero__cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn-principal,
+.btn-secondaire {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  font-weight: 800;
+  border-radius: 999px;
+  padding: .8rem 1.4rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .2s ease;
+}
+
+.btn-principal {
+  background: linear-gradient(90deg, var(--brand), var(--accent));
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 14px rgba(99,102,241,.25);
+}
+.btn-principal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(6,182,212,.35);
+}
+
+.btn-secondaire {
+  border: 2px solid var(--brand);
+  color: var(--brand);
+  background: transparent;
+}
+.btn-secondaire:hover {
+  background: rgba(99,102,241,.15);
+  color: #fff;
+}
+
+.hero__socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.hero__socials a {
+  font-size: 1.8rem;
+  color: var(--brand);
+  transition: transform .2s ease, color .2s ease;
+}
+.hero__socials a:hover {
+  transform: translateY(-3px);
+  color: var(--accent);
+}
+
+
+
+
 html[data-theme="light"] .accueil
 {
   background: linear-gradient(to bottom, rgba(255,255,255,.35), rgba(255,255,255,.15)),
               url(../media/kayak.jpg) center/cover no-repeat;
 }
+/*
 #textIntro
 {
   position:absolute;
   top: 35%;
   left: clamp(1rem, 8vw, 18%);
   max-width: 42rem;
-}
+}  */
 #bienvenue
 {
   opacity:0;
@@ -461,8 +576,10 @@ html[data-theme="light"] .titreprojet
   border-radius: 999px;
   font-size: .8rem;
   font-weight: 800;
+ /* color: #0f1320;
+background: #06B6D4; */
   color: #e6faff;
-  background: rgba(6,182,212,.14);
+  background: rgba(6,182,212,.7); 
   border: 1px solid rgba(6,182,212,.35);
 }
 

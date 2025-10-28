@@ -45,11 +45,37 @@
   <div id="emballage">
     <!-- ACCUEIL -->
     <section id="accueil" class="accueil">
-      <div id="textIntro">
-        <h4 id="bienvenue">Bienvenue, je m'appelle <span id="monNom">Mario Sekpona</span></h4>
-        <h1 id="statut">Étudiant en informatique & passionné de Data/Web</h1>
+  <div class="hero">
+    <!-- Texte à gauche -->
+    <div class="hero__text" id="textIntro">
+      <h4 id="bienvenue">Bienvenue, je m'appelle <span id="monNom">Mario Sekpona</span></h4>
+      <h1 id="statut">Étudiant en informatique & passionné de Data/Web</h1>
+
+      <!-- 🔹 Boutons CTA -->
+      <div class="hero__cta">
+        <a href="#projets" class="btn-principal">Voir mes projets</a>
+        <a href="#contact" class="btn-secondaire">Me contacter</a>
       </div>
-    </section>
+
+      <!-- 🔹 Icônes sociales -->
+      <div class="hero__socials">
+        <a href="https://github.com/Egua123" aria-label="GitHub" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/mariosekpona/" aria-label="LinkedIn" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Colonne photo -->
+    <figure class="hero__photo">
+      <img src="media/header-tech.jpg" alt="Portrait de Mario Sekpona" />
+      <span class="hero__photo-overlay" aria-hidden="true"></span>
+    </figure>
+  </div>
+</section>
+
 
     <!-- À PROPOS (linéaire) -->
     <section id="apropos" class="section-apropos">
@@ -78,11 +104,11 @@
 
       <div id="competencestechniques" class="blocks">
         <div id="textcompetencestechniques" class="textblocks">
-          <h1>Compétences techniques</h1>
+          <h1>Compétences techniques</h1> 
           <div>
-            <strong>Dev :</strong> Java, C++, Angular, Spring Boot (SOLID, OO).<br>
+            <strong>Dev :</strong> Java, C++, programmation OO, Javascript, python, Angular, Spring Boot (SOLID, OO).<br>
             <strong>Données :</strong> MySQL, PostgreSQL, Firestore.<br>
-            <strong>Algorithmes :</strong> OCaml, Prolog (programmation dynamique).<br>
+            <strong>Algorithmes :</strong> OCaml, Prolog - récursivité, programmation logique et dynamique .<br>
             <strong>Ingénierie :</strong> UML, architecture évolutive, projets collaboratifs.<br>
             <strong>Outils :</strong> Power BI, Firebase ,DBeaver , VS Code,Jupyter Notebook, git & github
           </div>
@@ -94,11 +120,11 @@
         <div id="textcompetencesrelationnelles" class="textblocks">
           <h1>Compétences relationnelles</h1>
           <ul>
-            <li><strong>Leadership</strong> (coaching, gestion d’équipe)</li>
-            <li><strong>Communication</strong> (arbitrage, conflits)</li>
-            <li><strong>Esprit d’équipe</strong> (projets scolaires/sport)</li>
-            <li><strong>Décision rapide</strong> (pression/temps réel)</li>
-            <li><strong>Organisation</strong> (deadlines, priorités)</li>
+            <li><strong>Leadership</strong> — expérience en coaching et gestion d’équipe</li>
+            <li><strong>Communication</strong> — arbitrage et résolution de conflits</li>
+            <li><strong>Esprit d’équipe</strong> — collaboration en projets scolaires et sportifs</li>
+            <li><strong>Décision rapide</strong> — efficacité sous pression ou en temps réel</li>
+            <li><strong>Organisation</strong> — gestion des priorités et respect des échéances</li>
           </ul>
         </div>
         <div class="imageblocks" id="imgComprel" aria-hidden="true"></div>
@@ -107,9 +133,10 @@
       <div id="passions" class="blocks">
         <div id="textpassions" class="textblocks">
           <h1>Loisirs</h1>
-          <h3>Sport</h3> Soccer, boxe régulière pour discipline & focus.
+          <h3>Sport & bien-être</h3> — Soccer et boxe pour la discipline, la concentration et la performance physique.  
+          <h3>Technologie & innovation </h3> — Explorer de nouvelles idées en programmation, data, IA.  
+          <h3>Création artisanale</h3> — Fabrication de savons, shampoings et parfums solides, entre précision et créativité.  
           <h3>Cuisine</h3> Explorer les cultures par les saveurs.
-          <h3>Écriture</h3> Capturer des idées, clarifier la pensée.
         </div>
         <div class="imageblocks" id="imgPass" aria-hidden="true"></div>
       </div>
@@ -123,7 +150,7 @@
           <div class="titreprojet">Dashboard BIXI</div>
           <div class="imageprojet" id="imageprojet1"></div>
           <ul class="tags">
-            <li>DataViz</li><li>ETL</li><li>SQL</li><li>JS</li>
+            <li>Power BI / DAX / M</li><li>ETL/Data Cleaning/KPI</li>
           </ul>
           <div class="boutonsprojet">
             <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/bixi-dashboard', '_blank');">
@@ -141,7 +168,7 @@
           <div class="titreprojet">Hotels Analytics</div>
           <div class="imageprojet" id="imageprojet2"></div>
           <ul class="tags">
-            <li>Python</li><li>Pandas</li><li>Viz</li>
+            <li>DDL/DML</li><li>CTE/ Window functions</li><li>Aggregate function/subqueries</li>
           </ul>
           <div class="boutonsprojet">
             <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/hotels-analytics', '_blank');">
@@ -159,7 +186,7 @@
           <div class="titreprojet">CBIR — recherche d’images par contenu</div>
           <div class="imageprojet" id="imageprojet3"></div>
           <ul class="tags">
-            <li>Vision</li><li>Features</li><li>Index</li>
+            <li>ML/Deep Learning</li><li>Analyse & clustering(K-Means, Distance Metrics, Feature Extraction)</li><li>Streamlit.</li>
           </ul>
           <div class="boutonsprojet">
             <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/cbir', '_blank');">
@@ -221,8 +248,23 @@
       <!-- Modales description (centrées & grandes) -->
       <div class="descriptionprojet" id="descriptionprojet1" aria-modal="true" role="dialog">
         <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-        <h3>Dashboard BIXI</h3>
-        <p>Ingestion → transformation → visualisation. KPIs, filtres, timeline.</p>
+        <h2>Analyse des données BIXI Montréal et impact de la météo sur les déplacements</h2>
+
+    <p><strong>Résumé :</strong> Ce projet personnel vise à analyser les données ouvertes du service BIXI Montréal afin de comprendre comment la météo influence les habitudes de déplacement des usagers. Le tableau de bord interactif, conçu avec Power BI, combine les données de trajets et les conditions météorologiques pour révéler des tendances clés sur l’utilisation du service à travers la ville.</p>
+
+    <p><strong>Objectifs principaux :</strong></p>
+    <ul>
+        <li>Nettoyer et modéliser plus de <strong>2 Go de données</strong> issues des trajets BIXI 2025, avec intégration automatique des données météorologiques (température, précipitations, vent) via <em>Meteostat</em>.</li>
+        <li>Créer un modèle de données optimisé permettant des agrégations par <strong>saison, jour de la semaine, et tranche horaire</strong>.</li>
+        <li>Produire des <strong>visualisations dynamiques</strong> : stations les plus populaires, heures de pointe, durée moyenne des trajets, corrélation entre météo et volume d’utilisation.</li>
+        <li>Mettre en place des <strong>indicateurs clés (KPI)</strong> sur la fréquentation, la performance et l’impact climatique.</li>
+    </ul>
+
+    <p><strong>Technologies utilisées :</strong> Power BI, Power Query (M), DAX, Python, CSV, Meteostat API.</p>
+
+    <p><strong>Compétences démontrées :</strong> Nettoyage et modélisation de données volumineuses, intégration de sources externes, conception de modèles analytiques, création de rapports Power BI interactifs et présentation visuelle de données.</p>
+
+    <p><strong>Lien vers le tableau de bord :</strong> <a href="https://app.powerbi.com/view?r=ton-lien" target="_blank">Consulter le rapport Power BI</a></p>
       </div>
 
       <div class="descriptionprojet" id="descriptionprojet2" aria-modal="true" role="dialog">
@@ -239,14 +281,51 @@
 
       <div class="descriptionprojet" id="descriptionprojet4" aria-modal="true" role="dialog">
         <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-        <h3>Application de messagerie</h3>
-        <p>Angular + Spring Boot + Firebase + GCP, déploiement & monitoring.</p>
+        <h2>Application de Messagerie en Angular et Spring Boot</h2>
+            <p>
+                Ce projet a été développé dans le cadre du cours INF5190. Il s'agit d'une application de messagerie simple permettant aux utilisateurs de se connecter, de publier des messages, et de gérer des interactions en temps réel. Le projet a évolué sur cinq étapes distinctes, couvrant des technologies variées, allant de Angular et Spring Boot à Firebase et Google Cloud Platform.
+            </p>
+            <ul>
+                <li><strong>TP1 :</strong> Développement de la base de l'application avec Angular, incluant la gestion de la connexion et des messages en mémoire. Les fonctionnalités ont été entièrement implémentées avec succès.</li>
+                <li><strong>TP2 :</strong> Ajout d'un backend avec Spring Boot pour gérer les connexions, les messages persistants en mémoire et les notifications en temps réel via WebSockets. Le tout fonctionne correctement.</li>
+                <li><strong>TP3 :</strong> Intégration de Firebase pour stocker les comptes utilisateurs, les messages dans Firestore, et les images dans Cloud Storage. Ce TP a été complété avec succès et l'application est fonctionnelle.</li>
+                <li><strong>TP4 :</strong> Ajout de gestion d'erreurs et tests automatisés. Bien que la majorité des tests fonctionnent, des complications sont survenues lors de la mise en place de certains tests d'intégration avec l'émulateur Firebase.</li>
+                <li><strong>TP5 :</strong> Déploiement de l'application sur Firebase Hosting (frontend) et Google Cloud Run (backend), avec un tableau de bord de surveillance. Des difficultés ont été rencontrées lors de l'intégration des métriques et de la configuration des alertes, ce qui a limité leur efficacité.</li>
+            </ul>
+            <p>
+                <strong>Technologies utilisées :</strong> Angular, Spring Boot, Firebase, Docker, Google Cloud Run, Google Cloud Monitoring.
+            </p>
+            <p>
+                <strong>Statut :</strong> Les trois premières étapes fonctionnent bien et offrent une application stable. Les deux dernières étapes ont rencontré des complications techniques qui ont partiellement affecté leur implémentation.
+            </p>
+            <p>
+                <strong>Lien vers le projet :</strong> <a href="https://inf-5190-chat-prod.web.app" target="_blank">Consulter l'application</a>
+            </p>
+
       </div>
 
       <div class="descriptionprojet" id="descriptionprojet5" aria-modal="true" role="dialog">
         <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-        <h3>Logement en ligne</h3>
-        <p>Gestion logements/baux/rendez-vous/alertes. Java, UML, patrons de conception.</p>
+        <h2>Logement en Ligne</h2>
+              <p><strong>Résumé :</strong> Le projet "Logement en Ligne" est une solution de gestion immobilière développée dans le cadre du cours <em>INF5153 - Conception de logiciels</em>. Il permet à une agence immobilière de gérer les logements, les baux, les rendez-vous, et les notifications tout en appliquant des principes de conception avancés et une architecture logicielle structurée.</p>
+              
+              <p><strong>Fonctionnalités principales :</strong></p>
+              <ul>
+                  <li><strong>Gestion des logements :</strong> Différents types de logements avec options de personnalisation (meublé, climatisation, WiFi, etc.).</li>
+                  <li><strong>Gestion des baux :</strong> Suivi des contrats de location, avec une évolution prévue vers des baux électroniques.</li>
+                  <li><strong>Alertes automatiques :</strong> Création d'alertes personnalisées en fonction des critères des utilisateurs.</li>
+                  <li><strong>Rendez-vous :</strong> Planification des visites avec notifications pour les gérants et les visiteurs.</li>
+                  <li><strong>Journalisation :</strong> Historisation des visites et des signatures de baux.</li>
+              </ul>
+              
+              <p><strong>Technologies utilisées :</strong>  <em>Java </em></p>
+              
+              <p><strong>Diagrammes et conception :</strong> Des modèles UML (cas d’utilisation, séquences, classes) accompagnent le code pour documenter les interactions et l'architecture du projet. Ces diagrammes sont accessibles dans le dossier dédié du dépôt.</p>
+              
+              <p><strong>Compétences démontrées :</strong> Analyse des besoins, modélisation UML, application des principes SOLID et des patrons GoF, développement d'une architecture SBA évolutive, et intégration frontend-backend.</p>
+              
+              <p><strong>Lien GitHub :</strong> <a href="https://github.com/votre-lien-vers-le-repo" target="_blank">Consulter le dépôt</a></p>
+
       </div>
     </section>
 
