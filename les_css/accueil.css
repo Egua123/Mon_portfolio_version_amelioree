@@ -865,3 +865,62 @@ textarea:focus
   color: var(--accent);
   transform: translateY(-2px);
 }
+
+
+
+
+/* Sous-menu pour les CV (version raffinée) */
+.cv_dropdown {
+  position: relative;
+}
+
+/* Boîte du menu déroulant (au-dessus du bouton) */
+.cv_links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2.8rem; /* au lieu de top → s'affiche au-dessus */
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-muted);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.3rem 0.6rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.25);
+  text-align: center;
+  z-index: 20;
+  min-width: 130px;
+  animation: fadeInDown 0.25s ease-in-out;
+}
+
+/* Liens à l’intérieur du menu */
+.cv_links a {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.25rem 0;
+  transition: color 0.25s ease;
+}
+
+.cv_links a:hover {
+  color: var(--accent);
+}
+
+/* Apparition fluide */
+.cv_dropdown:hover .cv_links {
+  display: flex;
+  animation: fadeInDown 0.25s ease-in-out forwards;
+}
+
+/* Animation légère d’apparition vers le haut */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 5px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
