@@ -48,8 +48,12 @@
   <div class="hero">
     <!-- Texte à gauche -->
     <div class="hero__text" id="textIntro">
-      <h4 id="bienvenue">Bienvenue, je m'appelle <span id="monNom">Mario Sekpona</span></h4>
-      <h1 id="statut">Étudiant en informatique & passionné de Data/Web</h1>
+      <h4 id="bienvenue">Bonjour, je suis <span id="monNom">Mario Sekpona</span></h4>
+      <h1 id="statut">Étudiant en informatique | Data & Développement Web</h1>
+      <p class="hero-description">
+        J’analyse les données et développe des applications web pour créer des solutions utiles, claires et performantes.
+      </p>
+
 
       <!--  Boutons CTA -->
       <div class="hero__cta">
@@ -83,8 +87,15 @@
         <div id="textpresentation" class="textblocks">
           <h1>Présentation</h1>
           <div>
-            En 3ᵉ année de bac en informatique, je conçois des interfaces simples et efficaces
-            et j’adore automatiser les tâches.
+             Étudiant en informatique et génie logiciel à l’UQAM, je m’intéresse à la façon dont les
+            <strong>données</strong> et le <strong>développement</strong> peuvent améliorer les décisions et créer des produits utiles.
+            <br><br>
+            À travers mes projets (BIXI Montréal, base SQL hôtelière, moteur CBIR, applications web),
+            j’ai développé de solides bases en <strong>SQL</strong>, <strong>Power BI</strong> et <strong>Python</strong>, ainsi qu’une expérience en
+            <strong>développement web full-stack</strong> (API REST, authentification, Firebase/Cloud).
+            <br><br>
+            Je cherche un <strong>stage</strong> où je pourrai allier <strong>rigueur</strong>, <strong>curiosité</strong> et <strong>sens de l’analyse</strong>
+            pour livrer des solutions claires, fiables et orientées impact.
           </div>
         </div>
         <div class="imageblocks" id="imgPre" aria-hidden="true"></div>
@@ -106,11 +117,12 @@
         <div id="textcompetencestechniques" class="textblocks">
           <h1>Compétences techniques</h1> 
           <div>
-            <strong>Dev :</strong> Java, C++, programmation OO, Javascript, python, Angular, Spring Boot (SOLID, OO).<br>
-            <strong>Données :</strong> MySQL, PostgreSQL, Firestore.<br>
-            <strong>Algorithmes :</strong> OCaml, Prolog - récursivité, programmation logique et dynamique .<br>
-            <strong>Ingénierie :</strong> UML, architecture évolutive, projets collaboratifs.<br>
-            <strong>Outils :</strong> Power BI, Firebase ,DBeaver , VS Code,Jupyter Notebook, git & github
+              <strong>Data & analyse :</strong> Power BI (DAX, Power Query M), SQL (modélisation relationnelle, jointures, agrégations, KPI),
+              Python (Pandas, NumPy, scikit-learn).<br>
+              <strong>Web :</strong> JavaScript, HTML/CSS, React (en progression), Angular, API REST, JWT.<br>
+              <strong>Backend :</strong> Spring Boot, Flask, Firebase (Firestore, Storage), notions Cloud (Cloud Run / Hosting).<br>
+              <strong>Bases de données :</strong> PostgreSQL, MySQL, MongoDB, Firestore.<br>
+              <strong>Outils :</strong> Git/GitHub, GitLab, Docker, VS Code, DBeaver, Jupyter, Streamlit, Pytest.
           </div>
         </div>
         <div class="imageblocks" id="imgComptech" aria-hidden="true"></div>
@@ -120,11 +132,11 @@
         <div id="textcompetencesrelationnelles" class="textblocks">
           <h1>Compétences relationnelles</h1>
           <ul>
-            <li><strong>Leadership</strong> — expérience en coaching et gestion d’équipe</li>
-            <li><strong>Communication</strong> — arbitrage et résolution de conflits</li>
-            <li><strong>Esprit d’équipe</strong> — collaboration en projets scolaires et sportifs</li>
-            <li><strong>Décision rapide</strong> — efficacité sous pression ou en temps réel</li>
-            <li><strong>Organisation</strong> — gestion des priorités et respect des échéances</li>
+              <li><strong>Esprit analytique</strong> — capacité à structurer un problème et en tirer des conclusions claires</li>
+              <li><strong>Rigueur & sens du détail</strong> — qualité, cohérence et respect des standards</li>
+              <li><strong>Apprentissage autonome</strong> — progression rapide sur de nouvelles techno (Data/Web)</li>
+              <li><strong>Communication</strong> — à l’aise pour expliquer, documenter et collaborer</li>
+              <li><strong>Travail d’équipe</strong> — expérience en projets académiques et en environnement Agile</li>
           </ul>
         </div>
         <div class="imageblocks" id="imgComprel" aria-hidden="true"></div>
@@ -145,95 +157,99 @@
     <!-- PROJETS (ordre + tags + modales) -->
     <section id="projets">
       <div class="blocProjet">
-        <!-- 1. Dashboard BIXI -->
-        <div class="brique" id="brique1">
-          <div class="titreprojet">Dashboard BIXI</div>
-          <div class="imageprojet" id="imageprojet1"></div>
-          <ul class="tags">
-            <li>Power BI / DAX / M</li><li>ETL/Data Cleaning/KPI</li>
-          </ul>
-          <div class="boutonsprojet">
-            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/projet_BIXI', '_blank');">
-              <span class="boutontextprojet">voir sur</span>
-              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
-            </button>
-            <button class="deuxboutons boutondetail" data-target="#descriptionprojet1">
-              <span class="boutontextprojet">description</span>
-            </button>
-          </div>
-        </div>
 
-        <!-- 2. Hotels Analytics -->
-        <div class="brique" id="brique2">
-          <div class="titreprojet">Hotels Analytics</div>
-          <div class="imageprojet" id="imageprojet2"></div>
-          <ul class="tags">
-            <li>DDL/DML</li><li>CTE/ Window functions</li><li>Aggregate function/subqueries</li>
-          </ul>
-          <div class="boutonsprojet">
-            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/hotels_analytics_project', '_blank');">
-              <span class="boutontextprojet">voir sur</span>
-              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
-            </button>
-            <button class="deuxboutons boutondetail" data-target="#descriptionprojet2">
-              <span class="boutontextprojet">description</span>
-            </button>
-          </div>
-        </div>
 
-        <!-- 3. CBIR -->
-        <div class="brique" id="brique3">
-          <div class="titreprojet">CBIR — recherche d’images par contenu</div>
-          <div class="imageprojet" id="imageprojet3"></div>
-          <ul class="tags">
-            <li>ML/Deep Learning</li><li>Analyse & clustering(K-Means, Distance Metrics, Feature Extraction)</li><li>Streamlit.</li>
-          </ul>
-          <div class="boutonsprojet">
-            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/cbir', '_blank');">
-              <span class="boutontextprojet">voir sur</span>
-              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
-            </button>
-            <button class="deuxboutons boutondetail" data-target="#descriptionprojet3">
-              <span class="boutontextprojet">description</span>
-            </button>
-          </div>
-        </div>
+  <!-- 1. BiblioSmartTech (remplace ancien #brique2 mais on garde id brique1/imageprojet1/descriptionprojet1 pour éviter bugs) -->
+  <div class="brique" id="brique1">
+    <div class="titreprojet">BiblioSmartTech — Bibliothèque numérique intelligente</div>
+    <div class="imageprojet" id="imageprojet1"></div>
+    <ul class="tags">
+      <li>React</li><li>Flask</li><li>PostgreSQL</li><li>Docker</li><li>Tests (Pytest)</li>
+    </ul>
+    <div class="boutonsprojet">
+      <button class="deuxboutons" onclick="window.open('LIEN_BIBLIO', '_blank');">
+        <span class="boutontextprojet">voir sur</span>
+        <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+      </button>
+      <button class="deuxboutons boutondetail" data-target="#descriptionprojet1">
+        <span class="boutontextprojet">description</span>
+      </button>
+    </div>
+  </div>
 
-        <!-- 4. App messagerie -->
-        <div class="brique" id="brique4">
-          <div class="titreprojet">application monopage de messagerie simple</div>
-          <div class="imageprojet" id="imageprojet4"></div>
-          <ul class="tags">
-            <li>Angular</li><li>Spring Boot</li><li>Firebase</li>
-          </ul>
-          <div class="boutonsprojet">
-            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/chat-app-inf5190', '_blank');">
-              <span class="boutontextprojet">voir sur</span>
-              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
-            </button>
-            <button class="deuxboutons boutondetail" data-target="#descriptionprojet4">
-              <span class="boutontextprojet">description</span>
-            </button>
-          </div>
-        </div>
+  <!-- 2. App messagerie (on garde tes ids brique4 -> mais ici on veut l'afficher en 2e, donc on met ce bloc en 2e et on garde id brique4/imageprojet4/descriptionprojet4) -->
+  <div class="brique" id="brique2">
+    <div class="titreprojet">Application de messagerie — Angular & Spring Boot</div>
+    <div class="imageprojet" id="imageprojet2"></div>
+    <ul class="tags">
+      <li>Angular</li><li>Spring Boot</li><li>Firebase</li>
+    </ul>
+    <div class="boutonsprojet">
+      <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/chat-app-inf5190', '_blank');">
+        <span class="boutontextprojet">voir sur</span>
+        <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+      </button>
+      <button class="deuxboutons boutondetail" data-target="#descriptionprojet4">
+        <span class="boutontextprojet">description</span>
+      </button>
+    </div>
+  </div>
 
-        <!-- 5. Logement en ligne -->
-        <div class="brique" id="brique5">
-          <div class="titreprojet">Logement en ligne</div>
-          <div class="imageprojet" id="imageprojet5"></div>
-          <ul class="tags">
-            <li>Java</li><li>UML</li><li>Design</li>
-          </ul>
-          <div class="boutonsprojet">
-            <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/inf5153-groupe9', '_blank');">
-              <span class="boutontextprojet">voir sur</span>
-              <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
-            </button>
-            <button class="deuxboutons boutondetail" data-target="#descriptionprojet5">
-              <span class="boutontextprojet">description</span>
-            </button>
-          </div>
-        </div>
+  <!-- 3. Système de tickets (remplace ancien Logement, on garde id brique3/imageprojet3/descriptionprojet3) -->
+  <div class="brique" id="brique3">
+    <div class="titreprojet">Système de tickets — Auth & rôles</div>
+    <div class="imageprojet" id="imageprojet3"></div>
+    <ul class="tags">
+      <li>React</li><li>Node.js</li><li>Express</li><li>MongoDB</li><li>JWT / bcrypt</li>
+    </ul>
+    <div class="boutonsprojet">
+      <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/it-tickets', '_blank');">
+        <span class="boutontextprojet">voir sur</span>
+        <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+      </button>
+      <button class="deuxboutons boutondetail" data-target="#descriptionprojet5">
+        <span class="boutontextprojet">description</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 4. Dashboard BIXI (on garde id brique2/imageprojet2/descriptionprojet2 MAIS on l'affiche en 4e) -->
+  <div class="brique" id="brique4">
+    <div class="titreprojet">Dashboard BIXI — Impact météo</div>
+    <div class="imageprojet" id="imageprojet4"></div>
+    <ul class="tags">
+      <li>Power BI</li><li>DAX</li><li>Power Query (M)</li><li>ETL</li><li>KPI</li>
+    </ul>
+    <div class="boutonsprojet">
+      <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/projet_BIXI', '_blank');">
+        <span class="boutontextprojet">voir sur</span>
+        <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+      </button>
+      <button class="deuxboutons boutondetail" data-target="#descriptionprojet2">
+        <span class="boutontextprojet">description</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 5. CBIR (on garde id brique3/imageprojet3/descriptionprojet3) -->
+  <div class="brique" id="brique5">
+    <div class="titreprojet">CBIR — Recherche d’images par contenu</div>
+    <div class="imageprojet" id="imageprojet5"></div>
+    <ul class="tags">
+      <li>Deep Learning</li><li>Clustering (K-Means)</li><li>Distances</li><li>Streamlit</li>
+    </ul>
+    <div class="boutonsprojet">
+      <button class="deuxboutons" onclick="window.open('https://github.com/Egua123/cbir', '_blank');">
+        <span class="boutontextprojet">voir sur</span>
+        <span class="boutoniconprojet"><i class="fa-brands fa-github"></i></span>
+      </button>
+      <button class="deuxboutons boutondetail" data-target="#descriptionprojet3">
+        <span class="boutontextprojet">description</span>
+      </button>
+    </div>
+  </div>
+
+
 
         <!-- 6. Voir plus (dernier) -->
         <a class="brique brique-plus" id="brique6" href="https://github.com/Egua123" target="_blank" rel="noreferrer">
@@ -245,120 +261,103 @@
         </a>
       </div>
 
-      <!-- Modales description (centrées & grandes) -->
-      <div class="descriptionprojet" id="descriptionprojet1" aria-modal="true" role="dialog">
-        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-        <h2>Analyse des données BIXI Montréal et impact de la météo sur les déplacements</h2>
+<!-- Modales description (centrées & grandes) -->
 
-    <p><strong>Résumé :</strong> Ce projet personnel vise à analyser les données ouvertes du service BIXI Montréal afin de comprendre comment la météo influence les habitudes de déplacement des usagers. Le tableau de bord interactif, conçu avec Power BI, combine les données de trajets et les conditions météorologiques pour révéler des tendances clés sur l’utilisation du service à travers la ville.</p>
+<!-- 1) BiblioSmartTech -->
+<div class="descriptionprojet" id="descriptionprojet1" aria-modal="true" role="dialog">
+  <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+  <h2>BiblioSmartTech — Bibliothèque numérique intelligente (Full-Stack)</h2>
 
-    <p><strong>Objectifs principaux :</strong></p>
-    <ul>
-        <li>Nettoyer et modéliser plus de <strong>2 Go de données</strong> issues des trajets BIXI 2025, avec intégration automatique des données météorologiques (température, précipitations, vent) via <em>Meteostat</em>.</li>
-        <li>Créer un modèle de données optimisé permettant des agrégations par <strong>saison, jour de la semaine, et tranche horaire</strong>.</li>
-        <li>Produire des <strong>visualisations dynamiques</strong> : stations les plus populaires, heures de pointe, durée moyenne des trajets, corrélation entre météo et volume d’utilisation.</li>
-        <li>Mettre en place des <strong>indicateurs clés (KPI)</strong> sur la fréquentation, la performance et l’impact climatique.</li>
-    </ul>
+  <p><strong>Résumé :</strong> Projet intégrateur en équipe visant à développer une plateforme de bibliothèque numérique avec gestion des utilisateurs, des documents et une recherche/filtrage, dans une approche Agile.</p>
 
-    <p><strong>Technologies utilisées :</strong> Power BI, Power Query (M), DAX, Python, CSV, Meteostat API.</p>
+  <p><strong>Points clés :</strong></p>
+  <ul>
+    <li>Développement <strong>full-stack</strong> : frontend <strong>React</strong> + backend <strong>Flask</strong> (API REST).</li>
+    <li>Fonctionnalités : <strong>CRUD</strong>, gestion des rôles, recherche/filtrage et endpoints structurés.</li>
+    <li>Intégration <strong>PostgreSQL</strong> + conteneurisation <strong>Docker</strong> + travail d’équipe via GitLab.</li>
+    <li>Mise en place de <strong>tests automatisés (Pytest)</strong> et bonnes pratiques (revues, qualité, livraison par sprints).</li>
+  </ul>
 
-    <p><strong>Compétences démontrées :</strong> Nettoyage et modélisation de données volumineuses, intégration de sources externes, conception de modèles analytiques, création de rapports Power BI interactifs et présentation visuelle de données.</p>
+  <p><strong>Technologies utilisées :</strong> React, Flask, PostgreSQL, Docker, GitLab, Pytest.</p>
+  <p><strong>Compétences démontrées :</strong> Développement full-stack, conception d’API, modélisation BD, conteneurisation, tests, collaboration Agile.</p>
+</div>
 
-    
-      </div>
+<!-- 2) BIXI -->
+<div class="descriptionprojet" id="descriptionprojet2" aria-modal="true" role="dialog">
+  <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+  <h2>Analyse des données BIXI Montréal et impact de la météo sur les déplacements</h2>
 
-      <div class="descriptionprojet" id="descriptionprojet2" aria-modal="true" role="dialog">
-        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-        <h2>Analyse des données hôtelières et performance du secteur</h2>
+  <p><strong>Résumé :</strong> Projet personnel visant à analyser les données ouvertes de BIXI Montréal pour comprendre comment la météo influence les habitudes de déplacement. Le tableau de bord Power BI combine trajets + météo pour révéler des tendances d’utilisation.</p>
 
-<p><strong>Résumé :</strong> Ce projet personnel vise à concevoir et analyser une base de données complète du secteur hôtelier afin d’évaluer la performance des établissements, la satisfaction des clients et la rentabilité des réservations. Le système analytique, conçu avec SQL et visualisé dans Power BI, permet de dégager des tendances clés sur l’occupation, les revenus et les comportements clients.</p>
+  <p><strong>Objectifs principaux :</strong></p>
+  <ul>
+    <li>Nettoyer et modéliser plus de <strong>2 Go de données</strong> de trajets BIXI 2025 + intégration météo (température, précipitations, vent) via <em>Meteostat</em>.</li>
+    <li>Créer un modèle de données optimisé (saison, jour, tranche horaire, stations).</li>
+    <li>Produire des <strong>visualisations dynamiques</strong> : stations populaires, heures de pointe, durée moyenne, corrélations météo/usage.</li>
+    <li>Mettre en place des <strong>KPI</strong> pour suivre fréquentation et variations selon les conditions climatiques.</li>
+  </ul>
 
-<p><strong>Objectifs principaux :</strong></p>
-<ul>
-    <li>Concevoir un <strong>schéma relationnel SQL</strong> modélisant les entités clés : hôtels, chambres, clients, réservations et paiements.</li>
-    <li>Effectuer un <strong>nettoyage et une intégration des données</strong> issues de plusieurs fichiers sources afin de garantir la cohérence et l’intégrité référentielle.</li>
-    <li>Créer des <strong>requêtes analytiques avancées</strong> pour évaluer les taux d’occupation, la durée moyenne des séjours et les revenus générés par type de chambre ou saison.</li>
-   
-</ul>
+  <p><strong>Technologies utilisées :</strong> Power BI, Power Query (M), DAX, Python, CSV, Meteostat.</p>
+  <p><strong>Compétences démontrées :</strong> ETL, modélisation, KPI, storytelling data, dashboarding Power BI, intégration de sources externes.</p>
+</div>
 
-<p><strong>Technologies utilisées :</strong> MySQL, DBeaver.</p>
+<!-- 3) CBIR -->
+<div class="descriptionprojet" id="descriptionprojet3" aria-modal="true" role="dialog">
+  <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+  <h2>Système de recherche d’images basé sur le contenu (CBIR)</h2>
 
-<p><strong>Compétences démontrées :</strong> Modélisation relationnelle, manipulation et transformation de données, conception de requêtes SQL analytiques, création de rapports interactifs Power BI, et visualisation des performances hôtelières.</p>
+  <p><strong>Résumé :</strong> Projet académique visant à concevoir un système CBIR capable de retrouver des images similaires selon leur contenu visuel. Des CNN préentraînés extraient des vecteurs de caractéristiques utilisés pour la recherche et le clustering.</p>
 
+  <p><strong>Objectifs principaux :</strong></p>
+  <ul>
+    <li>Utiliser des <strong>CNN préentraînés</strong> (VGG16, ResNet50, InceptionV3) pour extraire des descripteurs robustes.</li>
+    <li>Appliquer un <strong>K-Means</strong> sur les vecteurs de caractéristiques pour regrouper des images similaires.</li>
+    <li>Développer une <strong>interface Streamlit</strong> : upload d’image + choix de distance (Euclidienne, Manhattan, Chebyshev, Canberra) + affichage des résultats.</li>
+    <li>Optimiser la <strong>phase offline</strong> (extraction, clustering, sauvegarde) et la <strong>phase online</strong> (requête + ranking + affichage).</li>
+  </ul>
 
+  <p><strong>Technologies utilisées :</strong> Python, TensorFlow/Keras, scikit-learn, NumPy, Pandas, Matplotlib, Streamlit.</p>
+  <p><strong>Compétences démontrées :</strong> Deep learning appliqué, extraction de features, clustering, recherche de similarité, UI data/ML.</p>
+</div>
 
+<!-- 4) Messagerie -->
+<div class="descriptionprojet" id="descriptionprojet4" aria-modal="true" role="dialog">
+  <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+  <h2>Application de messagerie — Angular & Spring Boot (INF5190)</h2>
 
+  <p><strong>Résumé :</strong> Application full-stack de messagerie développée en plusieurs étapes : frontend Angular, backend Spring Boot, stockage Firebase, puis déploiement cloud. Le projet couvre l’authentification, la persistance, et l’évolution vers un déploiement complet.</p>
 
-      </div>
+  <p><strong>Fonctionnalités / évolution :</strong></p>
+  <ul>
+    <li><strong>Frontend Angular</strong> : interfaces et gestion des messages.</li>
+    <li><strong>Backend Spring Boot</strong> : API REST, logique serveur, (et WebSockets selon étape).</li>
+    <li><strong>Firebase</strong> : comptes, messages Firestore, images Cloud Storage.</li>
+    <li><strong>Déploiement</strong> : Hosting + Cloud Run (selon configuration du projet).</li>
+  </ul>
 
-      <div class="descriptionprojet" id="descriptionprojet3" aria-modal="true" role="dialog">
-        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-            <h2>Système de recherche d’images basé sur le contenu (CBIR)</h2>
+  <p><strong>Technologies utilisées :</strong> Angular, Spring Boot, Firebase (Firestore/Storage), Docker, Cloud Run/Hosting.</p>
+  <p><strong>Compétences démontrées :</strong> Full-stack, auth, API REST, intégration cloud, structuration par étapes, debug.</p>
+</div>
 
-<p><strong>Résumé :</strong> Ce projet académique vise à concevoir un système de recherche d’images basé sur le contenu (CBIR) capable d’identifier et de classer des images selon leurs similarités visuelles. À partir de modèles de réseaux de neurones convolutifs (CNN) préentraînés, le système extrait des vecteurs de caractéristiques pour effectuer une recherche intelligente sans dépendre des métadonnées textuelles.</p>
+<!-- 5) Tickets -->
+<div class="descriptionprojet" id="descriptionprojet5" aria-modal="true" role="dialog">
+  <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
+  <h2>Système de gestion de tickets — React / Node / MongoDB</h2>
 
-<p><strong>Objectifs principaux :</strong></p>
-<ul>
-    <li>Mettre en œuvre trois modèles de <strong>CNN préentraînés</strong> : <em>VGG16</em>, <em>ResNet50</em> et <em>InceptionV3</em>, afin d’extraire des descripteurs d’images robustes.</li>
-    <li>Appliquer un <strong>clustering K-Means</strong> sur les vecteurs de caractéristiques pour regrouper les images similaires selon leur contenu visuel.</li>
-    <li>Développer une <strong>interface de recherche interactive</strong> permettant de retrouver les images les plus proches d’une image requête selon différentes distances de similarité (Euclidienne, Manhattan, Chebyshev, Canberra).</li>
-    <li>Optimiser la <strong>phase offline</strong> (extraction, clustering, sauvegarde des caractéristiques) et la <strong>phase online</strong> (requêtes utilisateur, affichage des résultats et visualisation).</li>
-</ul>
+  <p><strong>Résumé :</strong> Application web de gestion de tickets avec authentification sécurisée, rôles et endpoints REST. Le but : créer, suivre et gérer des tickets (support/incident) via une architecture claire frontend + backend.</p>
 
-<p><strong>Technologies utilisées :</strong> Python, TensorFlow / Keras, Scikit-learn, OpenCV, NumPy, Pandas, Matplotlib, Streamlit.</p>
+  <p><strong>Points clés :</strong></p>
+  <ul>
+    <li>Authentification sécurisée avec <strong>JWT</strong> et hachage des mots de passe via <strong>bcrypt</strong>.</li>
+    <li>API REST (Node/Express) pour créer, modifier, assigner et suivre les tickets.</li>
+    <li>Base de données <strong>MongoDB</strong> via <strong>Mongoose</strong> (modèles + validation).</li>
+    <li>Gestion des rôles (ex. admin / utilisateur) et permissions côté backend.</li>
+  </ul>
 
-<p><strong>Compétences démontrées :</strong> Extraction de caractéristiques visuelles via CNN, apprentissage non supervisé (K-Means), traitement et visualisation d’images, conception d’une interface interactive, et optimisation de la recherche de similarité à grande échelle.</p>
+  <p><strong>Technologies utilisées :</strong> React, Node.js, Express, MongoDB, Mongoose, JWT, bcrypt.</p>
+  <p><strong>Compétences démontrées :</strong> Full-stack JS, sécurité auth, conception d’API, modélisation NoSQL.</p>
+</div>
 
-
-
-      </div>
-
-      <div class="descriptionprojet" id="descriptionprojet4" aria-modal="true" role="dialog">
-        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-        <h2>Application de Messagerie en Angular et Spring Boot</h2>
-            <p>
-                Ce projet a été développé dans le cadre du cours INF5190. Il s'agit d'une application de messagerie simple permettant aux utilisateurs de se connecter, de publier des messages, et de gérer des interactions en temps réel. Le projet a évolué sur cinq étapes distinctes, couvrant des technologies variées, allant de Angular et Spring Boot à Firebase et Google Cloud Platform.
-            </p>
-            <ul>
-                <li><strong>TP1 :</strong> Développement de la base de l'application avec Angular, incluant la gestion de la connexion et des messages en mémoire. Les fonctionnalités ont été entièrement implémentées avec succès.</li>
-                <li><strong>TP2 :</strong> Ajout d'un backend avec Spring Boot pour gérer les connexions, les messages persistants en mémoire et les notifications en temps réel via WebSockets. Le tout fonctionne correctement.</li>
-                <li><strong>TP3 :</strong> Intégration de Firebase pour stocker les comptes utilisateurs, les messages dans Firestore, et les images dans Cloud Storage. Ce TP a été complété avec succès et l'application est fonctionnelle.</li>
-                <li><strong>TP4 :</strong> Ajout de gestion d'erreurs et tests automatisés. Bien que la majorité des tests fonctionnent, des complications sont survenues lors de la mise en place de certains tests d'intégration avec l'émulateur Firebase.</li>
-                <li><strong>TP5 :</strong> Déploiement de l'application sur Firebase Hosting (frontend) et Google Cloud Run (backend), avec un tableau de bord de surveillance. Des difficultés ont été rencontrées lors de l'intégration des métriques et de la configuration des alertes, ce qui a limité leur efficacité.</li>
-            </ul>
-            <p>
-                <strong>Technologies utilisées :</strong> Angular, Spring Boot, Firebase, Docker, Google Cloud Run, Google Cloud Monitoring.
-            </p>
-            <p>
-                <strong>Statut :</strong> Les trois premières étapes fonctionnent bien et offrent une application stable. Les deux dernières étapes ont rencontré des complications techniques qui ont partiellement affecté leur implémentation.
-            </p>
-          
-
-      </div>
-
-      <div class="descriptionprojet" id="descriptionprojet5" aria-modal="true" role="dialog">
-        <button class="close-modal" aria-label="Fermer"><i class="fa-solid fa-xmark"></i></button>
-        <h2>Logement en Ligne</h2>
-              <p><strong>Résumé :</strong> Le projet "Logement en Ligne" est une solution de gestion immobilière développée dans le cadre du cours <em>INF5153 - Conception de logiciels</em>. Il permet à une agence immobilière de gérer les logements, les baux, les rendez-vous, et les notifications tout en appliquant des principes de conception avancés et une architecture logicielle structurée.</p>
-              
-              <p><strong>Fonctionnalités principales :</strong></p>
-              <ul>
-                  <li><strong>Gestion des logements :</strong> Différents types de logements avec options de personnalisation (meublé, climatisation, WiFi, etc.).</li>
-                  <li><strong>Gestion des baux :</strong> Suivi des contrats de location, avec une évolution prévue vers des baux électroniques.</li>
-                  <li><strong>Alertes automatiques :</strong> Création d'alertes personnalisées en fonction des critères des utilisateurs.</li>
-                  <li><strong>Rendez-vous :</strong> Planification des visites avec notifications pour les gérants et les visiteurs.</li>
-                  <li><strong>Journalisation :</strong> Historisation des visites et des signatures de baux.</li>
-              </ul>
-              
-              <p><strong>Technologies utilisées :</strong>  <em>Java </em></p>
-              
-              <p><strong>Diagrammes et conception :</strong> Des modèles UML (cas d’utilisation, séquences, classes) accompagnent le code pour documenter les interactions et l'architecture du projet. Ces diagrammes sont accessibles dans le dossier dédié du dépôt.</p>
-              
-              <p><strong>Compétences démontrées :</strong> Analyse des besoins, modélisation UML, application des principes SOLID et des patrons GoF, développement d'une architecture SBA évolutive, et intégration frontend-backend.</p>
-              
-              
-
-      </div>
     </section>
 
     <!-- CONTACT (couleurs lisibles en jour/nuit) -->
@@ -410,8 +409,8 @@
           </a>
           <p class="descriptionIconFooter">Télécharger CV</p>
           <div class="cv_links">
-            <a href="media/CV_MARIO_SEKPONA_DEV.pdf" download target="_blank">version Développeur</a>
-            <a href="media/CV_MARIO_SEKPONA_DATA.pdf" download target="_blank">version Data Analyste</a>
+            <a href="media/MARIO_SEKPONA_CV_DEV_02_26.pdf" download target="_blank">version Développeur</a>
+            <a href="media/MARIO_SEKPONA_CV_DATA_02_26.pdf" download target="_blank">version Data Analyste</a>
         </div>
       </div>
 
